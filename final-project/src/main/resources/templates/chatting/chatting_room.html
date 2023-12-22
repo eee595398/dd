@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체채팅방</title>
+	<link rel="stylesheet" th:href="@{/css/chatting/chatting_room.css}">
+	<script src="https://kit.fontawesome.com/69a462bb6c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	
+		<th:block th:replace="~{common/headerChatting}">헤드</th:block>
+
+	    <th:block th:replace="~{common/leftSide}">사이드바</th:block>
+
+        <main>
+            <div class="mainSide" id="connectedUsers"></div>
+            <div class="main_chat">
+                     
+                <div class="main_view">
+			         <ul class="display-chatting" id="messageArea">
+                            <li class="target-chat">
+                            </li>
+                     </ul>	    
+                </div>
+                <div clas="main_comment">
+	            	<div class="send-contanier">
+                        <input type="text" id="message" class="content">
+                        <button type="button" onclick="sendMessage()">
+                            <img th:src="@{/common/images/fePaperPlane0.png}">
+                        </button>
+	            	</div>
+                </div>
+            </div>
+            <div class="mainSide">
+                <button onclick="history.back()" id="back">돌아가기</button>
+            </div>
+        </main>
+
+</body>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script th:src="@{/js/chatting/chatting_room.js}"></script>
+
+
+
+</html>

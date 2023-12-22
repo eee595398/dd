@@ -1,0 +1,595 @@
+body{
+    width: 100%;
+    height: 1080px;
+    margin: 0; 
+    padding: 0; 
+}
+
+button,a {
+    cursor: pointer;
+    
+}
+
+/* 보라색 헤더 */
+header{
+    height: 50px;
+    width: 100%;
+    background-color: #BDBFF8;
+    display: flex;
+
+}
+
+
+.title1{
+
+    display: flex;
+    width: 20%;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title2{
+
+    display: flex;
+    width: 80%;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.nowPepole{
+
+    margin-left: 10%;
+
+}
+
+
+/* ///////////////// */
+
+/* 사이드 */
+aside{
+    height: 900px;
+    width: 13%;
+    float: left;
+    display: block;
+    
+    }
+ 
+.search_room{
+
+    width: 100%;
+    height: 10%;
+    padding-top: 10%;
+    font-weight: bold;
+}
+
+.search_room div{
+    margin-bottom: 5%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    border-bottom: 1px black solid;
+   
+
+}
+
+
+/* 채팅방검색 */
+
+aside form{
+
+    margin:0;
+    padding: 0;
+
+}
+
+#searchChatting{
+
+    height: 30px;
+    width: 70%;
+    border-radius: 10px;
+ 	border: 1px solid black;
+    margin-left: 5%;
+}   
+
+aside img{
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+
+}
+
+
+aside button{
+    background: none;
+    outline: none;
+    border: none;
+
+   
+
+}
+
+
+.room_list{
+    margin-top: 7%;
+    height: 80%;
+
+
+
+}
+
+
+.room_list label{
+
+    padding-left: 5%;
+    
+    font-weight: bold;
+}
+
+
+
+.room_list ul{
+
+    padding: 0;
+}
+
+
+.room_list li {
+
+
+    height: 150px;
+    border-top: 0.3px rgba(0, 0, 0, 0.3) solid;
+    list-style: none;
+    display: flex;
+    padding-top: 5%;
+   
+
+}
+
+
+
+.room_list li> div{
+
+
+    padding-top: 10%;
+}
+
+
+.room_list li> div .chatDate {
+
+    font-size: 0.7rem;
+    opacity: 50%;
+}
+
+
+
+
+
+.room_list li img {
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-right: 5%;
+    overflow: hidden;
+
+}
+
+
+#message_pe{
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+
+}
+
+
+
+#last_message{
+    padding-top: 8%;
+    font-size: 0.8rem;
+
+}
+
+
+
+
+/*개인 채팅*/
+
+.private_list{
+    margin-top: 7%;
+    height: 80%;
+  
+
+
+
+}
+
+
+.private_list label{
+
+    padding-left: 5%;
+    
+    font-weight: bold;
+}
+
+
+
+.private_list ul{
+
+    padding: 0;
+}
+
+
+.private_list li {
+
+
+    height: 150px;
+    border-top: 0.3px rgba(0, 0, 0, 0.3) solid;
+    list-style: none;
+    display: flex;
+    padding-top: 5%;
+   
+
+}
+
+
+
+.private_list li> div{
+
+
+    padding-top: 10%;
+}
+
+
+.private_list li> div .chatDate {
+
+    font-size: 0.7rem;
+    opacity: 50%;
+}
+
+
+
+
+
+.private_list li img {
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-right: 5%;
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+/* //////////// */
+
+/* 채팅나오는창 */
+
+main{
+
+    height: 80%;
+    display: flex;
+}
+
+
+main>.mainSide{
+
+    width: 10%;
+    background-color: #D7F0FF;
+}
+
+
+.main_chat{
+
+width: 90%;
+
+}
+
+
+.main_view{
+
+    height: 80%;
+    overflow: 0 scroll;
+}
+
+.main_chat>div:nth-child(2){
+    height: 20%;
+    background-color: #D1D2EC;
+}
+
+
+
+
+
+#message{
+
+    height: 70px;
+    width: 70%;
+    margin-right: 5%;
+    border-radius: 10px;
+    border: none;
+}
+
+
+#submit{
+    padding-top: 1%;
+    border: none;
+    background-color: #D1D2EC;
+
+}
+
+
+
+/* 돌아가기 버튼////// */
+
+#back{
+    background-color: #FFEF5C;
+    border:none;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    margin: 200px 0 0 20px;
+    border-radius: 15px;
+
+
+}
+
+
+  /*사이드 버튼 모양*/
+ .button-room-setting,.invite-btn,.exit,.findBtn,.sideBarOut{
+	 background-color: rgb(128, 128, 255);
+	 font-weight: bold;
+	 height: 100px;
+	 width: 100px;
+     border-radius: 15px;
+	 margin:20px 0 0 20px;
+	 border: none;
+	 
+ }
+  
+
+
+
+
+/* ///////////////////////////////////// */
+
+  /* //////////////////////////////////// */
+    /* 채팅 창 */
+
+    .display-chatting {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        list-style: none;
+        padding: 10px 1px;
+    }
+    
+    .display-chatting > li{
+        margin: 10px 0;
+    }
+    
+    .target-chat{
+        display: flex;
+        align-items: flex-start;
+    }
+   
+    
+    .chat {
+        display: inline-block;
+        border-radius: 5px;
+        background-color: #FEFFE5;
+        text-align: left;
+        max-width: 1000px;
+        word-break: break-all;
+        white-space: pre-wrap;
+    }
+    
+    
+  #pro{
+
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+
+  }
+  
+  
+  
+  
+	.modal-overlay {
+	    display: none;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.5); /* 투명한 검은 배경 */
+	    z-index: 99; /* 모달 창 위에 표시되도록 설정 */
+	}
+	
+	
+	.modal-background{
+		
+		
+		background: white;
+	}
+	
+	
+
+  #resultArea{
+	  
+	  width: 50%;
+	  height: 50%;
+	  display: flex;
+	  
+  }	        
+
+  .result-row{
+	  margin:0%;
+	  padding:0%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  margin-right: 5%;
+	  
+	  
+  }
+  
+  
+ /*친구 리스트 이미지*/
+ 
+ .result-row-img{
+	 width: 50px;
+	 height: 50px;
+	 
+ }
+ 
+  
+  
+  /*/////////친구 초대를 위한 모달*/
+  
+  	.friend-overlay {
+	    display: none;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.5); /* 투명한 검은 배경 */
+	    z-index: 999; /* 모달 창 위에 표시되도록 설정 */
+	}
+	
+	
+	.friend-background{
+		
+
+		background: white;
+	}
+	
+	
+
+  #friendsArea{
+	  
+	  width: 50%;
+	  height: 50%;
+	  display: flex;
+	  
+  }	        
+  
+  
+  
+    .friend-row{
+	  margin:0%;
+	  padding:0%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  margin-right: 5%;
+	  
+	  
+  }
+  
+  
+ /*친구 리스트 이미지*/
+ 
+ .friend-row-img{
+	 width: 50px;
+	 height: 50px;
+	 border-radius: 10px;
+	 
+ }
+ 
+  
+  
+  
+  
+
+  
+ .button-room-setting {
+    display: block;
+}
+  
+  
+  
+
+.friendAreasImages{
+	
+	width: 30px;
+	height: 30px;
+	border-radius: 20%;
+}
+
+
+  
+.invite-btn{
+	 
+	 display: none;
+	 
+ } 
+  
+  
+  .send-contanier{
+	      display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+
+	  
+  }
+  
+  #targetInput{
+	  
+	  margin-left: 20px;
+  }
+
+  
+  
+  
+#room-list,#private-list {
+    max-height: 600px;
+    overflow-y: auto; 
+}
+  
+ #room-list::-webkit-scrollbar {
+    display: none;
+}
+  
+ #private-list::-webkit-scrollbar {
+    display: none;
+}
+  
+  
+/*.//////////////////////*/
+  
+  
+  /*채팅리스트 뒤집기*/
+.card{
+	transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+  
+  
+ .front,.back {
+  position: absolute;
+   backface-visibility: hidden;
+}
+  
+  
+.back {
+transform: rotateY(180deg);
+}
+.card.flipped {
+    transform: rotateY(180deg);
+}
+        
+  

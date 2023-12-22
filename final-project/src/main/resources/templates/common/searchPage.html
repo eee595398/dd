@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search_page</title>
+
+    <link rel="stylesheet" th:href="@{/css/common/searchPage.css}">
+    <link rel="stylesheet" href="search_page.css">
+    <script src="https://kit.fontawesome.com/69a462bb6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<th:block th:if="${member}">
+	    <input type="hidden" id="S_memberId" th:value="${member}">
+	</th:block>
+	
+    <th:block th:replace="~{common/header}"></th:block>
+
+    <th:block th:replace="~{common/leftSide}"></th:block>
+
+	<th:block th:replace="~{common/rightSide}"></th:block>
+
+    <main>
+        <div class="user_box">
+            <div class="search_X">
+				<!--'\'' + ${value} + '\'' + '에 대한 결과값 입니다.'-->
+                <h2 id="inputA" th:text="'\'' + ${value} + '\'' + '에 대한 결과값 입니다.'"></h2>
+            </div>
+            <hr>
+            <div class="searchList" id="searchList">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		<!--	//	동적 html 보기본 //
+				<div class="profile">
+				    <div class="profile-picture">
+				        
+			         <img th:src="@{/common/images/555.jpg}" alt="프로필 사진">
+				    </div>
+				    <div class="profile-info">
+				        
+				        <p class="id">ID: <span id="userId"></span></p>
+				        <p>Nickname: <span id="userNickname"></span></p>
+				    </div>
+				</div> -->
+				
+				
+				
+				
+				
+				
+				
+			</div>
+        </div>
+
+    </main>
+    
+    <script th:src="@{/js/common/searchPage.js}"></script>
+
+    
+</body>
+</html>
